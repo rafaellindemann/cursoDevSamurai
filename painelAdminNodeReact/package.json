@@ -1,0 +1,35 @@
+{
+  "name": "task-manager-dev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@adminjs/express": "^4.0.1",
+    "@adminjs/sequelize": "^2.1.0",
+    "@adminjs/upload": "^2.0.1",
+    "adminjs": "^5.5.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.2",
+    "lodash": "^4.17.21",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "react-google-charts": "^3.0.15",
+    "sequelize": "^6.12.5",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "sequelize-cli": "^6.3.0",
+    "sucrase": "^3.20.3"
+  },
+  "scripts": {
+    "dev": "nodemon ./src/server.js",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:undo": "sequelize-cli db:migrate:undo"
+  }
+}
